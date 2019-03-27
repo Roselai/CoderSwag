@@ -1,7 +1,8 @@
-package co.cantina.coderswag
+package co.cantina.coderswag.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import co.cantina.coderswag.R
 
 class MainActivity : AppCompatActivity() {
 
