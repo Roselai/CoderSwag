@@ -19,10 +19,11 @@ class MainActivity : AppCompatActivity() {
         adapter = CategoryAdapter(this, DataService.categories)
         categoryListView.adapter = adapter
 
-        categoryListView.setOnItemClickListener { parent, view, position, id ->
-            val category = DataService.categories[position]
-            Toast.makeText(this, "You clicked on the ${category.title}", Toast.LENGTH_SHORT).show()
-
-        }
+//        //doesn't work for recycler view
+////        categoryListView.setOnItemClickListener { parent, view, position, id ->
+////            val category = DataService.categories[position]
+////            Toast.makeText(this, "You clicked on the ${category.title}", Toast.LENGTH_SHORT).show()
+////
+////        }
     }
 }
