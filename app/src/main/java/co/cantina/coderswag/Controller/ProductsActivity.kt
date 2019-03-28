@@ -29,6 +29,11 @@ class ProductsActivity : AppCompatActivity() {
             spanCount = 3
         }
 
+        val screenSize = resources.configuration.screenWidthDp
+        if (screenSize > 720) {
+            spanCount = 3
+        }
+
         val layoutManager = GridLayoutManager(this, spanCount)
         productListView.layoutManager = layoutManager as RecyclerView.LayoutManager?
         productListView.adapter = adapter
