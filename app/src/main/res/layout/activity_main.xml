@@ -10,10 +10,10 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categories"
+            android:text="@string/categories"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:textSize="18sp"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp" android:textSize="18sp"
             android:id="@+id/textView"/>
     <android.support.v7.widget.RecyclerView
             android:layout_width="0dp"

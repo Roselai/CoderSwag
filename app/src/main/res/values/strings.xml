@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CoderSwag</string>
+    <string name="categories">Categories</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="description_description_description_description_description_description_description_description">
+        Description Description Description Description Description Description Description Description
+    </string>
+    <string name="item_image">item image</string>
+    <string name="products">Products</string>
+    <string name="category_image">Category Image</string>
+    <string name="hats">HATS</string>
+    <string name="product_image">product image</string>
 </resources>
