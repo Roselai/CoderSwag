@@ -1,5 +1,6 @@
 package co.cantina.coderswag.Controller
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -19,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         adapter = CategoryRecycleAdapter(this, DataService.categories) { category ->
-
+        val productsIntent = Intent(this, ProductsActivity::class.java)
+            startActivity(productsIntent)
         }
         categoryListView.adapter = adapter
 
