@@ -24,5 +24,6 @@ class ItemActivity : AppCompatActivity() {
         val resourceId = this.resources.getIdentifier(product.image, "drawable", this.packageName )
         itemImage.setImageResource(resourceId)
         itemTitle.text = product.title
+        itemPrice.text = product.price
     }
 }
