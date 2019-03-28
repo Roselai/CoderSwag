@@ -38,4 +38,6 @@ object DataService {
         Product("Devslopes Hustle", "$22", "shirt4" ),
         Product("Kickslip Studios", "$18", "shirt5" )
     )
+
+    val digitalGood = listOf<Product>()
 }
