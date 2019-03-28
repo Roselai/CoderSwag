@@ -40,4 +40,15 @@ object DataService {
     )
 
     val digitalGood = listOf<Product>()
+
+    //helper method to call list of certain type of product
+    fun getProducts(category: String) : List<Product> {
+        //similar to switch statement
+        when(category) {
+            "SHIRTS" -> return shirts
+            "HATS" -> return hats
+            "HOODIES" -> return hoodies
+            else -> return digitalGood
+        }
+    }
 }
