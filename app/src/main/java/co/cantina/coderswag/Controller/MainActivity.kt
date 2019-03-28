@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        adapter = CategoryRecycleAdapter(this, DataService.categories)
+        adapter = CategoryRecycleAdapter(this, DataService.categories) { category ->
+            println(category.title)
+        }
         categoryListView.adapter = adapter
 
         val layoutManager = LinearLayoutManager(this)
@@ -28,11 +30,6 @@ class MainActivity : AppCompatActivity() {
         categoryListView.setHasFixedSize(true)
 
 
-//        //doesn't work for recycler view
-////        categoryListView.setOnItemClickListener { parent, view, position, id ->
-////            val category = DataService.categories[position]
-////            Toast.makeText(this, "You clicked on the ${category.title}", Toast.LENGTH_SHORT).show()
-////
-//       }
+
     }
 }
